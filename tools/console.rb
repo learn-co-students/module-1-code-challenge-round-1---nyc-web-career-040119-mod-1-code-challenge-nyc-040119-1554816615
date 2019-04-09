@@ -7,6 +7,11 @@ end
 
 ###  WRITE YOUR TEST CODE HERE ###
 
+## MAGAZINE INITS
+
+health = Magazine.new('Health', 'Fitness')
+wealth = Magazine.new('Wealth', 'Finance')
+prosperity = Magazine.new('Prosperity', 'LivingLife')
 
 
 

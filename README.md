@@ -1,10 +1,10 @@
 # Object Relations Code Challenge
 
-For this assignment, you will be creating a domain to track contributions that authors make to magazines. For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.
+<!-- For this assignment, you will be creating a domain to track contributions that authors make to magazines. For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.
 
 _Note:_ It can be incredibly helpful to draw out what your domain will look like before you start coding. If you are not sketching out your domain, and thinking about single source of truth, you are doing it wrong :(
 
-## Topics
+## Topics -->
 
 - Classes vs Instances
 - Variable Scope ( Class, Instance, Local )
@@ -26,7 +26,7 @@ The below are the methods that must be present on your models. Feel free to buil
 
 ### Basic Class Methods and Properties
 
-#### Build the following methods on the `Author` class
+<!-- #### Build the following methods on the `Author` class
 
 An author is initialized with a name as a string. A name **cannot** be changed after it is initialized.
 
@@ -37,10 +37,10 @@ An author is initialized with a name as a string. A name **cannot** be changed a
 + `Author.most_verbose`
   + Returns the Author instance who has the longest article by word count
 
----
+--- -->
 
 #### Build the following methods on the `Article` class
-
+<!--
 An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string. An article **cannot** change its author or magazine after it is has been initialized.
 
 + `Article.all`
@@ -54,10 +54,10 @@ An article is initialized with an author as an Author object, a magazine as a Ma
 + `Article#content`
   + Returns the content for that given article
 
----
+--- -->
 
 #### Build the following methods on the `Magazine` class
-
+<!--
 A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category of the magazine **can be** changed after being initialized.
 
 + `Magazine#name`
@@ -65,7 +65,7 @@ A magazine is initialized with a name as a string and a category as a string. Th
 + `Magazine#category`
   + Returns the category of this magazine
 + `Magazine.all`
-  + Returns an array of all Magazine instances
+  + Returns an array of all Magazine instances -->
 + `Magazine.find_by_name(name)`
   + Given a string of magazine's name, this method returns the first magazine object that matches
 
