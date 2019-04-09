@@ -31,9 +31,9 @@ The below are the methods that must be present on your models. Feel free to buil
 An author is initialized with a name as a string. A name **cannot** be changed after it is initialized.
 
 + `Author#name`
-  + Returns the name of the author as a string
+  <!-- + Returns the name of the author as a string -->
 + `Author.all`
-  + Returns an array of all Author instances
+  <!-- + Returns an array of all Author instances -->
 + `Author.most_verbose`
   + Returns the Author instance who has the longest article by word count
 
@@ -44,15 +44,15 @@ An author is initialized with a name as a string. A name **cannot** be changed a
 An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string. An article **cannot** change its author or magazine after it is has been initialized.
 
 + `Article.all`
-  + Returns an array of all Article instances
+  <!-- + Returns an array of all Article instances -->
 + `Article#author`
-  + Returns the author for that given article
+  <!-- + Returns the author for that given article -->
 + `Article#magazine`
-  + Returns the magazine for that given article
+  <!-- + Returns the magazine for that given article -->
 + `Article#title`
-  + Returns the title for that given article
+  <!-- + Returns the title for that given article -->
 + `Article#content`
-  + Returns the content for that given article
+  <!-- + Returns the content for that given article -->
 
 ---
 
@@ -61,13 +61,13 @@ An article is initialized with an author as an Author object, a magazine as a Ma
 A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category of the magazine **can be** changed after being initialized.
 
 + `Magazine#name`
-  + Returns the name of this magazine
+  <!-- + Returns the name of this magazine -->
 + `Magazine#category`
-  + Returns the category of this magazine
+  <!-- + Returns the category of this magazine -->
 + `Magazine.all`
-  + Returns an array of all Magazine instances
+  <!-- + Returns an array of all Magazine instances -->
 + `Magazine.find_by_name(name)`
-  + Given a string of magazine's name, this method returns the first magazine object that matches
+  <!-- + Given a string of magazine's name, this method returns the first magazine object that matches -->
 
 ---
 
@@ -76,20 +76,20 @@ A magazine is initialized with a name as a string and a category as a string. Th
 #### `Author`
 
 + `Author#add_article(magazine, title, content)`
-  + Given a magazine (as Magazine instance), a title (as a string), and content (as a string), this method creates a new Article instance and associates it with that author and that magazine.
+  <!-- + Given a magazine (as Magazine instance), a title (as a string), and content (as a string), this method creates a new Article instance and associates it with that author and that magazine. -->
 + `Author#articles`
-  + Returns an array of Article instances the author has written
+  <!-- + Returns an array of Article instances the author has written -->
 + `Author#magazines`
-  + Returns a **unique** array of Magazine instances for which the author has contributed to
+  <!-- + Returns a **unique** array of Magazine instances for which the author has contributed to -->
 + `Author#show_specialties`
-  + Returns a **unique** array of categories of the magazines for which the author has contributed to
+  <!-- + Returns a **unique** array of categories of the magazines for which the author has contributed to -->
 + `Author.most_active`
   + Returns the Author instance who has written the greatest number of articles
 
 #### `Magazine`
 
 + `Magazine#article_titles`
-  + Returns an array of the titles of all articles written for that magazine
+  <!-- + Returns an array of the titles of all articles written for that magazine -->
 + `Magazine#contributors`
   + Returns an array of Author instances who have written for this magazine
 + `Magazine#word_count`
