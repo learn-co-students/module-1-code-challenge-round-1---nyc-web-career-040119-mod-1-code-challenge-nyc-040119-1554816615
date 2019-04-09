@@ -6,6 +6,7 @@ class Article
   attr_accessor :magazine, :author, :content
 
   @@all = []
+
   def initialize(magazine, author, title, content)
     @author = author
     @magazine = magazine
@@ -13,6 +14,10 @@ class Article
     @content = content
 
     @@all << self
+  end
+
+  def magazines
+    self.all.select {|magazine| magazine.article == self }
   end
 
   def self.all
