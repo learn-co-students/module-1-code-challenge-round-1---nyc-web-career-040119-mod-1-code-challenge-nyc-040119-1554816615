@@ -10,7 +10,15 @@ class Author
     @@all << self
   end
 
-  def self.all
+  def articles
+    Article.all.select {|author| author.article.name }
+  end
+
+  def magazines
+    self.articles.select {|magazine| magazine.article == self}
+  end
+  
+  def
     @@all
   end
 end

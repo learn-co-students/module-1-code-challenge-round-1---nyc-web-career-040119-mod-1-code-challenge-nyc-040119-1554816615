@@ -17,9 +17,11 @@ class Article
   end
 
   def magazines
-    self.all.select {|magazine| magazine.article == self }
+     self.author.select {|magazine| magazine.author.title == self }
   end
 
+  def authors
+    self.magazine.select {|author| author.magazine.title == self }
   def self.all
     @@all
   end
