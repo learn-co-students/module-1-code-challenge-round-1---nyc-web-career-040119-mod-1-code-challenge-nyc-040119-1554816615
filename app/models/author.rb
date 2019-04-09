@@ -32,9 +32,8 @@ class Author
   def articles
     Article.all.select do |work|
       work.author == self
-    end
-  # .map do |work|
-  #   work.
+    end.map do |work|
+      work.content
   end
 
   def magazines
