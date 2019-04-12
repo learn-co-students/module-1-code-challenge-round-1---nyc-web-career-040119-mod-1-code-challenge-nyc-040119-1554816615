@@ -40,8 +40,8 @@ An author is initialized with a name as a string. A name **cannot** be changed a
 ---
 
 #### Build the following methods on the `Article` class
-
-An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string. An article **cannot** change its author or magazine after it is has been initialized.
+<!--
+An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string. An article **cannot** change its author or magazine after it is has been initialized. -->
 
 <!-- + `Article.all`
   + Returns an array of all Article instances
@@ -57,7 +57,7 @@ An article is initialized with an author as an Author object, a magazine as a Ma
 ---
 
 #### Build the following methods on the `Magazine` class
-
+<!--
 A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category of the magazine **can be** changed after being initialized.
 
 + `Magazine#name`
@@ -69,7 +69,7 @@ A magazine is initialized with a name as a string and a category as a string. Th
 + `Magazine.find_by_name(name)`
   + Given a string of magazine's name, this method returns the first magazine object that matches
 
----
+--- -->
 
 ### Associations and Aggregate Methods
 
